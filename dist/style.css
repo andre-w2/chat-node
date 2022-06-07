@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#form {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+
+#input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+}
+
+#input:focus {
+  outline: none;
+}
+
+#form > button {
+  background: #333;
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+}
+
+#messages {
+  list-style-type: none;
+  left: 0;
+  right: 0;
+  top: 60px;
+  position: absolute;
+}
+
+#messages > li {
+  padding: 0.5rem 1rem;
+}
+
+#messages > li:nth-child(odd) {
+  background: #efefef;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #000;
+  padding: 10px;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.connect__input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 7px;
+  color: #757575;
+}
+
+.connect__input:hover {
+  color: green;
+  border: 1px solid green;
+}
+
+.connect__input:focus, .connect__input:active {
+  border: 1px solid blue;
+  color: blue;
+}
+
+.btn {
+  background: none;
+  outline: none;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.exit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.connect__id {
+  font-size: 24px;
+  color: #757575;
+  font-weight: 700;
+}
+
+.exit__btn {
+  border: 1px solid red;
+  color: red;
+}
+
+.connect__btn {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.d-none {
+  display: none;
+}
+
+.alert {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  z-index: 2;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+
+.alert-info {
+  color: #055160;
+  background-color: #cff4fc;
+  border-color: #b6effb;
+}
+
+.alert-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
